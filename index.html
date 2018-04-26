@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="source/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,16 +12,20 @@
       <nav class="main-navigation">
 
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item">Главная</li>
-          <li class="site-list__item">Фотографии</li>
-          <li class="site-list__item">Конкурс</li>
-          <li class="site-list__item">Html Academy</li>
+          <li class="site-list__item"><a class="main-navigation__link">Главная</a></li>
+          <li class="site-list__item"><a class="main-navigation__link" href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a class="main-navigation__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a></li>
 
         </ul>
 
       </nav>
 
     </header>
+    <main>
+      <div class="image-block">
+        <img src="source/img/iphone-hand-mobile@1x.png" alt="Приложение на телефоне" width="258" height="286">
+      </div>
     <section class="upload">
       <h2 class="upload__title visually-hidden">Скачать приложение</h2>
       <a class="upload__button" href="#">Скачать приложение</a>
@@ -50,6 +56,7 @@
           <p class="plus-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
+      <img src="source/img/iphone-screen-mobile@1x.png" alt="Телефон" width="157" height="320">
     </section>
     <section class="review">
       <ul class="review__list slider-list">
@@ -96,10 +103,12 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <img src="source/img/bg-map-mobile@1x.png" alt="Карта" width="320" height="645">
+      <div class="contacts__section">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
       <div class="contacts__block phone-block">
         <p class="contacts__block__title">Звоните:</p>
-        <p class="contacts__block__text"><+7 (812) 555-66-66/p>
+        <p class="contacts__block__text">+7 (812) 555-66-66</p>
       </div>
       <div class="contacts__block phone-block">
         <p class="contacts__block__title">Пишите:</p>
@@ -109,7 +118,8 @@
         <p class="contacts__block__title">Приезжайте в гости:</p>
         <p class="contacts__block__text">ул. Большая Конюшенная, 19/8</p>
       </div>
+    </div>
     </section>
-
+</main>
   </body>
 </html>
