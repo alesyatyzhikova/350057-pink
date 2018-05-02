@@ -1,9 +1,13 @@
 .footer {
   width: 320px;
+  margin: 0 auto;
   padding: 40px 20px;
-  margin: 0;
   box-sizing: border-box;
   text-align: center;
+}
+
+.footer-index {
+  display: none;
 }
 
 .link-list {
@@ -17,4 +21,17 @@
   line-height: 18px;
   font-weight: 400;
   color: #283645;
+}
+
+@media (min-width: 768px) {
+  .footer-index {
+    display: block;
+  }
+
+  .footer {
+    display: flex;
+    width: 660px;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
 }

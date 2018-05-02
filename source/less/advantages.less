@@ -1,9 +1,29 @@
 .advantages {
   width: 320px;
-  background: #f2f2f2;
-  padding: 85px 20px 0 20px;
+  margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
+}
+
+.offer {
+  width: 320px;
+  padding: 45px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  background: #ffffff;
+
+  &__text {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #283645;
+  }
+}
+
+.advantages__plus-block {
+  background: #f2f2f2;
+  padding: 85px 20px 0 20px;
 }
 
 .plus-list {
@@ -23,4 +43,73 @@
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+}
+
+.effect {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    width: 660px;
+    padding: 0 10px;
+  }
+
+  .offer {
+    width: 640px;
+    padding: 0 20px;
+
+    &__text {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  .advantages__plus-block {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plus-list {
+    width: 310px;
+    order: 2;
+  }
+
+  .effect {
+    display: block;
+    width: 660px;
+    padding: 50px 10px;
+  }
+
+  .effect__wrapper {
+    display: flex;
+    width: 640px;
+    justify-content: space-between;
+  }
+
+  .effect__block {
+    width: 300px;
+    text-align: left;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  .effect__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283645;
+  }
+
+  .effect__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #d22856;
+  }
 }

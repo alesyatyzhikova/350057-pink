@@ -8,40 +8,42 @@
   </head>
   <body>
     <header class="main-header">
-      <img class="main-header__logo-image" src="picture.com" alt="Логотип" width="50" height="50">
       <nav class="main-navigation">
-
+        <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
+          <li class="site-list__item"><a class="main-navigation__link logo">PINK</a></li>
           <li class="site-list__item"><a class="main-navigation__link">Главная</a></li>
           <li class="site-list__item"><a class="main-navigation__link" href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a class="main-navigation__link" href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a></li>
-
         </ul>
-
+      </div>
       </nav>
-
     </header>
     <main>
-      <div class="image-block">
-        <img src="source/img/iphone-hand-mobile@1x.png" alt="Приложение на телефоне" width="258" height="286">
+      <section class="upload">
+        <div class="upload__wrapper">
+        <div class="upload__image-block">
+          <img src="source/img/iphone-hand-mobile@1x.png" alt="Приложение на телефоне" width="258" height="286">
+        </div>
+        <div class="upload__text-block">
+        <h2 class="upload__title">Взгляните на жизнь иначе!</h2>
+        <a class="upload__button" href="#">Скачать приложение</a>
+        <ul class="upload__list app-list">
+          <li class="app-list__item app-list__item-apple">Apple</li>
+          <li class="app-list__item app-list__item-android">Android</li>
+          <li class="app-list__item app-list__item-windows">Windows</li>
+        </ul>
+        <p class="upload__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-    <section class="upload">
-      <h2 class="upload__title visually-hidden">Скачать приложение</h2>
-      <a class="upload__button" href="#">Скачать приложение</a>
-      <ul class="upload__list app-list">
-        <li class="app-list__item app-list__item-apple">Apple</li>
-        <li class="app-list__item app-list__item-android">Android</li>
-        <li class="app-list__item app-list__item-windows">Windows</li>
-
-      </ul>
-      <p class="upload__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
-    <div class="offer">
-      <p class="offer__text">Устали от серости мегаполиса?</p>
-      <p class="offer__text">Нам есть что вам предложить!</p>
     </div>
+      </section>
     <section class="advantages">
+      <div class="advantages__offer-block offer">
+        <p class="offer__text">Устали от серости мегаполиса?</p>
+        <p class="offer__text">Нам есть что вам предложить!</p>
+      </div>
+      <div class="advantages__plus-block">
       <ul class="advantages__list plus-list">
         <li class="plus-list__item plus-item">
           <h3 class="plus-item__title">Поднимает настроение</h3>
@@ -57,6 +59,21 @@
         </li>
       </ul>
       <img src="source/img/iphone-screen-mobile@1x.png" alt="Телефон" width="157" height="320">
+    </div>
+    <div class="effect">
+      <div class="effect__wrapper">
+      <img source="picture.com" width="200" height="100">
+      <div class="effect__block">
+        <h3 class="effect__title">Эффект на 24 часа!</h3>
+        <p class="effect__text">Британские ученые провели исследования
+и доказали, что положительный эффект
+от использования приложения длится
+целые сутки!
+</p>
+<a class="effect__link" href="#">Узнать больше об исследовании</a>
+</div>
+</div>
+</div>
     </section>
     <section class="review">
       <ul class="review__list slider-list">
@@ -72,9 +89,7 @@
             <p class="slider-item__name">Николай Петров</p>
             <p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
-
       </ul>
-
     </section>
     <section class="price">
       <div class="price__block">
@@ -121,5 +136,18 @@
     </div>
     </section>
 </main>
+<footer class="footer footer-index">
+  <div class="footer__logo">
+    PINK
+  </div>
+  <ul class="footer__link-list link-list">
+    <li class="link-list__item twitter-link">twitter</li>
+    <li class="link-list__item facebook-link">facebook</li>
+    <li class="link-list__item youtube-link">youtube</li>
+  </ul>
+  <p class="footer__academy-link">
+    Разработано
+  </p>
+</footer>
   </body>
 </html>

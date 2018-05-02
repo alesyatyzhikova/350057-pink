@@ -1,6 +1,7 @@
 .main-header {
   width: 320px;
   background: #283645;
+  margin: 0 auto;
 }
 
 .site-list {
@@ -17,4 +18,24 @@
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-navigation__wrapper {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-navigation {
+    background-color: rgba(40, 54, 69, 0.3);
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
