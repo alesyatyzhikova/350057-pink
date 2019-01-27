@@ -1,37 +1,107 @@
 .footer {
   width: 320px;
-  margin: 0 auto;
   padding: 40px 20px;
   box-sizing: border-box;
-  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-
-.footer-index {
-  display: none;
+.footer__block {
+  margin: 0 auto;
+  margin-bottom: 37px;
 }
-
-.link-list {
+.footer__block:last-child {
+  margin-bottom: 0px;
+}
+.footer__logo {
+  width: 150px;
+}
+.footer__social {
+  width: 150px;
+}
+.footer__develop {
+  width: 150px;
+}
+.social__link {
+  text-decoration: none;
+  font-size: 0;
+}
+.social__list {
+  display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
-
-.footer__academy-link {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #283645;
+.twitter,
+.facebook,
+.youtube {
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 2px solid #e9ebec;
 }
-
+.twitter {
+  background-image: url("../img/icon-twitter-pink.svg");
+}
+.facebook {
+  background-image: url("../img/icon-facebook-pink.svg");
+}
+.youtube {
+  background-image: url("../img/icon-youtube-pink.svg");
+}
+.footer__develop-text {
+  position: relative;
+  margin-right: 40px;
+}
+.footer__develop-text::after {
+  content: "";
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 37px;
+  position: absolute;
+  display: block;
+  right: -50px;
+  top: -5px;
+}
 @media (min-width: 768px) {
-  .footer-index {
-    display: block;
-  }
-
   .footer {
-    display: flex;
+    display: block;
     width: 660px;
-    padding: 0 10px;
+    padding: 35px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__block {
+    margin: 0;
+  }
+  .social__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .social__link {
+    text-decoration: none;
+    font-size: 0;
+  }
+  .footer__develop-text::after {
+    right: -30px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    display: block;
+    width: 960px;
+    padding: 90px 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
   }
 }

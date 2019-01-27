@@ -1,0 +1,84 @@
+.panorama {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+.panorama::before {
+  content: "Панорама дня";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #d4345f;
+  box-sizing: border-box;
+  right: 20px;
+  top: 0;
+}
+.panorama-text {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.panorama__like {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #283645;
+  text-transform: uppercase;
+  color: #d22856;
+  margin: 0;
+  position: relative;
+  margin-left: 30px;
+}
+.panorama__like::after {
+  content: "";
+  background-image: url("../img/icon-heart-pink.svg");
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+@media (min-width: 768px) {
+  .panorama {
+    width: 660px;
+    margin-bottom: 50px;
+  }
+  .panorama::before {
+    top: 60px;
+  }
+  .panorama img {
+    width: 100%;
+  }
+  .panorama-text {
+    width: 620px;
+    position: relative;
+  }
+  .panorama__like {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+  }
+  .panorama__like::after {
+    top: 5px;
+    left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .panorama {
+    width: 100%;
+  }
+  .panorama::before {
+    top: 60px;
+    right: 15%;
+  }
+  .panorama-text {
+    width: 940px;
+  }
+}

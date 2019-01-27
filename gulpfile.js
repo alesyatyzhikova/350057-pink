@@ -20,13 +20,13 @@ gulp.task("style", function() {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "source/",
+    server: "/Users/alesya_tyzhikova/Documents/350057-pink/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/less/**/*.less", ["style"])
+  gulp.watch("/*.html").on("change", server.reload);
 });

@@ -1,0 +1,140 @@
+.promo {
+  margin-top: 385px;
+  background-color: #1d2631;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  &__button {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 14px 35px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    margin-bottom: 30px;
+  }
+}
+.promo::before {
+  content: "";
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 258px;
+  height: 286px;
+  top: -285px;
+}
+.promo__block {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+.promo__title {
+  display: none;
+}
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.promo__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.promo__item a {
+  font-size: 0;
+}
+.apple::before {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 57px;
+  background-image: url("../img/logo-apple.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.android::before {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.microsoft::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 42px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .promo {
+    width: 660px;
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-bottom: 110px;
+    position: relative;
+    background-image: url("../img/iphone-6.png");
+    background-repeat: no-repeat;
+  }
+  .promo::before {
+    display: none;
+  }
+  .promo__image {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .promo__title {
+    display: block;
+    width: 230px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .promo__block {
+    width: 300px;
+    margin: 0;
+    margin-right: auto;
+    padding: 30px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .promo {
+    width: 960px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    padding-bottom: 110px;
+    background-position: 90% 0;
+  }
+  .promo__block {
+    width: 370px;
+  }
+}

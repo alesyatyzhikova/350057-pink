@@ -1,0 +1,57 @@
+.form__textarea {
+  width: 320px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.form__textarea textarea {
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color:#283645;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+}
+.form__textarea legend {
+  margin-bottom: 15px;
+}
+.mobile-hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .form__textarea {
+    width: 660px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    order: 5;
+    margin-bottom: 60px;
+  }
+  .form__textarea fieldset {
+    width: 620px;
+    padding: 45px 60px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+  }
+  .form__textarea legend {
+    display: block;
+    margin-bottom: 0px;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__textarea {
+    width: 940px;
+    padding: 0;
+  }
+  .form__textarea fieldset {
+    width: 940px;
+  }
+  .form__textarea textarea {
+    text-align: left;
+  }
+}

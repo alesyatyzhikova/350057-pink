@@ -1,17 +1,36 @@
-.filter {
+.filter__wrapper {
   width: 320px;
+  background-color: #f2f2f2;
   margin: 0 auto;
-  background: #f2f2f2;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 0px 20px;
   box-sizing: border-box;
 }
-
-.filter__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: 768px) {
+  .filter__wrapper {
+    width: 660px;
+    padding: 55px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-.filter__button {
-  width: 100%;
+@media (min-width: 1200px) {
+  .filter {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .filter__wrapper {
+    width: 940px;
+    padding: 55px 60px 55px 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter__instruments {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+  }
+  .filter__image {
+    height: 400px;
+  }
 }

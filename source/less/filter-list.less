@@ -1,0 +1,136 @@
+.filter__list-wrapper {
+  width: 280px;
+  padding: 40px 0 30px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.filter__list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 38px;
+  box-sizing: border-box;
+}
+.filter__item {
+  margin-right: 30px;
+}
+.filter__item:last-child {
+  margin-right: 0px;
+}
+.contrast {
+  margin-top: 5px;
+}
+.mobile__range {
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.mobile__range::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #f2f2f2;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 100px;
+}
+.filter__range {
+  display: none;
+}
+@media (min-width: 768px) {
+  .filter__list {
+    flex-direction: column;
+    padding: 0;
+  }
+  .mobile__range {
+    display: none;
+  }
+  .filter__range {
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #283645;
+    margin-left: 50px;
+    margin-top: -15px;
+  }
+  .filter__item {
+    margin-right: 0;
+    padding: 25px 0 35px 0;
+    border-bottom: 1px solid #dddfe0;
+  }
+  .filter__item:first-child {
+    padding-top: 10px;
+  }
+  .filter__list-wrapper {
+    padding: 0;
+    padding-left: 20px;
+  }
+  .crop__range {
+    position: relative;
+  }
+  .crop__range::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 100px;
+  }
+  .fill__range {
+    position: relative;
+  }
+  .fill__range::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 140px;
+  }
+  .contrast__range {
+    position: relative;
+  }
+  .contrast__range::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__list-wrapper {
+    width: 410px;
+    padding: 0;
+  }
+  .filter__range {
+    width: 280px;
+    height: 2px;
+    margin-left: 100px;
+    margin-top: -25px;
+  }
+  .filter__item:first-child {
+    padding-top: 0px;
+  }
+  .filter__item {
+    padding: 15px 0 35px 0;
+  }
+}

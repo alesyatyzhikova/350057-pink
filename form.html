@@ -1,123 +1,137 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width">
     <link rel="stylesheet" href="source/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <title>Формы</title>
   </head>
   <body>
     <header class="main-header">
-      <img class="main-header__logo-image" src="picture.com" alt="Логотип" width="50" height="50">
-      <nav class="main-navigation">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
-          <li class="site-list__item"><a class="main-navigation__link" href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a class="main-navigation__link">Конкурс</a></li>
-          <li class="site-list__item"><a class="main-navigation__link" href="https://htmlacademy.ru/">Html Academy</a></li>
+      <nav class="header__nav">
+        <div class="nav__wrapper">
+        <div class="logo__wrapper">
+        <a class="header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="source/img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 768px)" srcset="source/img/logo-pink-white-tablet.svg">
+          <img src="source/img/logo-pink-white-mobile.svg" alt=" Логотип">
+        </picture>
+        </a>
+      </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a>Главная</a></li>
+          <li class="nav__item"><a href="foto.html">Фотографии</a></li>
+          <li class="nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
+      </div>
       </nav>
-
+      <div class="promo-form">
+        <h3 class="promo-form__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
+      </div>
     </header>
     <main>
-      <div class="competition">
-        <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <section class="form">
+        <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+        <form action="index.html" method="post">
+          <div class="form__wrapper">
+          <div class="form__name-wrapper">
+            <div class="surname__block form__name">
+            <label for="surname">Фамилия:</label><input class="input-name" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+          </div>
+          <div class="name__block form__name">
+            <label for="name">Имя:</label><input type="text" name="name" id="name" placeholder="Введите ваше имя *">
+          </div>
+          <div class="middle-name__block form__name">
+            <label for="middle-name">Отчество:</label><input type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+          </div>
+          </div>
+          <div class="form__checkbox">
+          <fieldset>
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <div class="checkbox__wrapper">
+              <div class="checkbox__block">
+              <input type="checkbox" name="checkbox-1" id="checkbox-1" checked><label class="checkbox__label" for="checkbox-1">Сделал селфи с акулой</label>
+            </div>
+            <div class="checkbox__block">
+              <input type="checkbox" name="checkbox-2" id="checkbox-2" checked><label class="checkbox__label" for="checkbox-2">Обгорел на пляже</label>
+            </div>
+            <div class="checkbox__block">
+              <input type="checkbox" name="checkbox-3" id="checkbox-3"><label class="checkbox__label" for="checkbox-3">Видел Чака Норриса</label>
+            </div>
+            <div class="checkbox__block">
+              <input type="checkbox" name="checkbox-4" id="checkbox-4"><label class="checkbox__label" for="checkbox-4">Накупил сувениров</label>
+            </div>
+            <div class="checkbox__block">
+              <input type="checkbox" name="checkbox-5" id="checkbox-5" checked><label class="checkbox__label" for="checkbox-5">Удержал башню</label>
+            </div>
+            <div class="checkbox__block">
+              <input type="checkbox" name="checkbox-6" id="checkbox-6"><label class="checkbox__label" for="checkbox-6">Разгромил отель</label>
+            </div>
+          </div>
+          </fieldset>
+        </div>
+        <div class="form__contacts">
+          <fieldset>
+            <legend class="mobile-hidden">Контактная информация</legend>
+            <div class="form-contacts__block-wrapper">
+            <div class="form__contacts-block">
+            <label for="phone">Номер телефона</label><input type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="form__contacts-block">
+            <label for="phone">Адрес почты</label><input type="text" name="phone" id="phone" placeholder="Введите почту *">
+          </div>
+        </div>
+        </fieldset>
       </div>
-       <section class="forms">
-         <p class="forms__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-           <figure class="form__name">
-             <label for="surname">Фамилия</label>
-             <input type="text" name="name" id="surname" placeholder="Укажите фамилию">
-             <label for="name">Имя</label>
-             <input type="text" name="name" id="name" placeholder="Введите ваше имя">
-             <label for="patronymic">Отчество</label>
-             <input type="text" name="name" id="patronymic" placeholder="Ну и отчество тоже">
-           </figure>
-           <figure class="form__checkbox">
-             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-             <p class="checkbox-block">
-             <input type="checkbox" name="" value="" id="one-checkbox">
-             <label for="one-checkbox">Сделал селфи с акулой</label>
-           </p>
-            <p class="checkbox-block">
-             <input type="checkbox" name="" value="" id="two-checkbox">
-             <label for="two-checkbox">Обгорел на пляже</label>
-           </p>
-            <p class="checkbox-block">
-             <input type="checkbox" name="" value="" id="three-checkbox">
-             <label for="three-checkbox">Видел Чака Норриса</label>
-           </p>
-             <p class="checkbox-block">
-             <input type="checkbox" name="" value="" id="four-checkbox">
-             <label for="four-checkbox">Накупил сувениров</label>
-           </p>
-             <p class="checkbox-block">
-             <input type="checkbox" name="" value="" id="five-checkbox">
-             <label for="five-checkbox">Удержал башню</label>
-           </p>
-             <p class="checkbox-block">
-             <input type="checkbox" name="" value="" id="six-checkbox">
-              <label for="six-checkbox">Разгромил отель</label>
-            </p>
-           </figure>
-           <figure class="form__contacts">
-             <label for="number">Номер телефона</label>
-             <input type="text" name="" id="number" placeholder="Номер, пожалуйста">
-             <label for="mail">Адрес почты</label>
-             <input type="text" name="" id="mail" placeholder="Введите почту">
-           </figure>
-           <figure class="form__radio">
-             <legend class="form__legend">С каким приложением путешествовали?</legend>
-             <p class="radio-block">
-             <input type="radio" name="" id="one-radio">
-             <label for="one-radio">Pink для IOS</label>
-           </p>
-             <p class="radio-block">
-             <input type="radio" name="" id="two-radio">
-             <label for="two-radio">Pink на Android</label>
-           </p>
-             <p class="radio-block">
-             <input type="radio" name="" id="three-radio">
-             <label for="three-radio">Windows Phone</label>
-           </p>
-           </figure>
-           <figure class="form__textarea">
-             <legend class="form__legend">Опишите свои эмоции</legend>
-             <textarea name="name" rows="8" cols="15" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-
-           </figure>
-           <button class="form__button" type="submit">Отправить форму</button>
-           <p class="form__text">- Обязательные поля</p>
-         </form>
-       </section>
+      <div class="form__radio">
+          <fieldset>
+            <legend>С каким приложением путешествовали?</legend>
+            <div class="form__radio-block">
+              <input type="radio" name="radio" id="radio-1" checked><label class="radio__label" for="radio-1">Pink для iOS</label>
+            </div>
+            <div class="form__radio-block">
+              <input type="radio" name="radio" id="radio-2"><label class="radio__label" for="radio-2">Pink на Android</label>
+            </div>
+            <div class="form__radio-block">
+              <input type="radio" name="radio" id="radio-3"><label class="radio__label" for="radio-3">Windows Phone</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__textarea">
+          <fieldset>
+            <legend>Опишите свои эмоции</legend>
+            <label class="mobile-hidden" for="textarea">Опишите свои эмоции</label>
+            <textarea name="description" rows="4" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__bottom-block">
+          <button class="form__button" type="submit" name="button">Отправить форму</button>
+          <p class="form__bottom"><span>*</span>- Обязательные поля</p>
+        </div>
+      </div>
+        </form>
+      </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        PINK
+      <div class="footer__logo footer__block">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="source/img/logo-pink-blue-desktop.svg">
+        <source media="(min-width: 768px)" srcset="source/img/logo-pink-blue-mobile.svg">
+        <img src="source/img/logo-pink-blue-mobile.svg" alt="Логотип">
+      </picture>
       </div>
-      <ul class="footer__link-list link-list">
-        <li class="link-list__item twitter-link">twitter</li>
-        <li class="link-list__item facebook-link">facebook</li>
-        <li class="link-list__item youtube-link">youtube</li>
-      </ul>
-      <p class="footer__academy-link">
-        Разработано
-      </p>
+      <div class="footer__social social footer__block">
+        <ul class="social__list">
+          <a class="social__link twitter" href= "#"><li class="social__item">Twitter</li></a>
+          <a class="social__link facebook" href= "#"><li class="social__item">Facebook</li></a>
+          <a class="social__link youtube" href= "#"><li class="social__item">Youtube</li></a>
+        </ul>
+      </div>
+      <div class="footer__develop footer__block">
+        <p class="footer__develop-text">Разработано</p>
+      </div>
     </footer>
-    <div class="popup-done visually-hidden">
-      <div class="popup-done__text-block">
-      <h3 class="popup-done__title">Ваша заявка отправлена</h3>
-      <p class="popup-done__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
-оповестим вас.</p>
-</div>
-<div class="popup-done__button-block">
-      <button class="popup-done__button button" type="button">Закрыть окно</button>
-    </div>
-    </div>
-    <div class="popup-error visually-hidden">
-      <h3 class="popup-error__title">Что-то пошло не так!</h3>
-      <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-error__button button" type="button">OK</button>
   </body>
 </html>

@@ -1,0 +1,63 @@
+.filter__buttons {
+  margin: 0 auto;
+  border-top: 1px solid #dddfe0;
+}
+.filter__button-wrapper {
+  width: 280px;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.filter__button {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.filter__button-post {
+  color: #d22856;
+  border: 2px solid #d22856;
+  margin-bottom: 10px;
+}
+.filter__button-cancel {
+  color: #dddfe0;
+  border: 2px solid #dddfe0;
+}
+@media (min-width: 768px) {
+  .filter__buttons {
+    border-top: none;
+  }
+  .filter__button-wrapper {
+    padding: 0;
+    padding-top: 75px;
+    padding-left: 20px;
+  }
+  .filter__button {
+    width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__button-wrapper {
+    width: 410px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter__buttons {
+    margin-top: auto;
+  }
+  .filter__button {
+    width: 184px;
+    margin: 0;
+  }
+  .filter__button-post {
+    margin-bottom: 0;
+  }
+}
