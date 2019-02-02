@@ -14,7 +14,22 @@
   margin-bottom: 0px;
 }
 .footer__logo {
-  width: 150px;
+  width: 146px;
+  height: 40px;
+  display: block;
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  background-repeat: no-repeat;
+}
+.footer__logo:hover,
+.footer__logo:focus {
+    width: 146px;
+    height: 40px;
+    display: block;
+    background-image: url("../img/logo-pink-blue-mobile-hover.svg");
+    background-repeat: no-repeat;
+}
+.footer__logo:active {
+  opacity: 0.3;
 }
 .footer__social {
   width: 150px;
@@ -41,6 +56,19 @@
   border-radius: 50%;
   border: 2px solid #e9ebec;
 }
+.twitter:hover,
+.facebook:hover,
+.youtube:hover,
+.twitter:focus,
+.facebook:focus,
+.youtube:focus {
+  border: 2px solid #33404e;
+}
+.twitter:active,
+.facebook:active,
+.youtube:active {
+  opacity: 0.3;
+}
 .twitter {
   background-image: url("../img/icon-twitter-pink.svg");
 }
@@ -65,6 +93,12 @@
   right: -50px;
   top: -5px;
 }
+.footer__develop-text:hover::after {
+  background-image: url("../img/logo-htmlacademy-hover.svg");
+}
+.footer__develop-text:active::after {
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .footer {
     display: block;
@@ -76,6 +110,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  .footer__logo {
+    width: 146px;
+    height: 40px;
+    display: block;
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+    background-repeat: no-repeat;
+  }
+  .footer__logo:hover,
+  .footer__logo:focus {
+      width: 146px;
+      height: 40px;
+      display: block;
+      background-image: url("../img/logo-pink-blue-desktop-hover.svg");
+      background-repeat: no-repeat;
   }
   .footer__block {
     margin: 0;

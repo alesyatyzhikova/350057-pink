@@ -48,6 +48,15 @@ input[type="checkbox"]:checked + .checkbox__label::before {
 .checkbox__block:last-child {
   margin-bottom: 0px;
 }
+.checkbox__label:hover::before {
+  border: 1px solid #283645;
+  outline: none;
+}
+.checkbox__label:active::before,
+.checkbox__label:focus::before {
+  border: 1px solid #d22856;
+  outline: none;
+}
 @media (min-width: 768px) {
   .form__checkbox {
     width: 660px;

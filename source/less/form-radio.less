@@ -53,6 +53,15 @@ input[type="radio"]:checked + .radio__label::after {
   top: 6px;
   left: -60px;
 }
+.radio__label:hover::before {
+  border: 1px solid #283645;
+  outline: none;
+}
+.radio__label:active::before,
+.radio__label:focus::before {
+  border: 1px solid #d22856;
+  outline: none;
+}
 @media (min-width: 768px) {
   .form__radio {
     width: 660px;

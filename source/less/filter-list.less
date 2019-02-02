@@ -13,6 +13,15 @@
   padding: 0 38px;
   box-sizing: border-box;
 }
+.fill picture,
+.contrast picture {
+  opacity: 0.3;
+}
+.fill picture:hover,
+.contrast picture:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .filter__item {
   margin-right: 30px;
 }
@@ -42,8 +51,16 @@
   top: -5px;
   left: 100px;
 }
+.mobile__range:hover::before {
+  background-color: #d22856;
+  cursor: pointer;
+}
 .filter__range {
   display: none;
+}
+.filter__range:hover::before {
+  background-color: #d22856;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .filter__list {

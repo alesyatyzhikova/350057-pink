@@ -1,19 +1,68 @@
 .main-header {
   background: url(../img/bg-back-mobile@2x.jpg);
-  background-size: 700px auto;
   background-repeat: no-repeat;
   background-color: #283645;
   background-position: 50% 0;
 }
+.header__nav-desktop {
+  display: none;
+}
 .header__nav {
   background-color: rgba(25, 34, 43, 0.3);
+  padding: 0;
 }
 .logo__wrapper {
-  padding: 20px;
+  width: 100%
+}
+.nav__button {
+  background-color: transparent;
+  font-size: 0;
+  border: none;
+  background-image: url(../img/open-menu.png);
+  width: 50px;
+  height: 24px;
+}
+.nav__button--closed{
+  background-color: transparent;
+  font-size: 0;
+  border: none;
+  background-image: url(../img/close-menu.png);
+  width: 23px;
+  height: 22px;
+  outline: none;
+}
+.nav__button--closed:hover {
+  background-image: url(../img/close-menu-hover.png);
+  cursor: pointer;
+}
+.nav__button:hover,
+.nav__button:focus {
+  background-image: url(../img/open-menu-hover.png);
+  outline: none;
+  cursor: pointer;
+}
+.header__logo {
+  width: 74px;
+  height: 23px;
+  display: block;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+}
+.header__logo:active {
+  opacity: 0.3;
+}
+.header__logo:hover,
+.header__logo:focus {
+  width: 74px;
+  height: 23px;
+  display: block;
+  background-image: url("../img/logo-pink-mobile.svg");
+  background-repeat: no-repeat;
+  outline: none;
 }
 .nav__wrapper {
-  width: 320px;
-  padding: 0 20px;
+  width: 100%;
+  padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -23,6 +72,26 @@
   list-style: none;
   background-color: #283645;
   display: none;
+}
+.nav--opened {
+  display: block;
+}
+.logo__wrapper--open-menu {
+  background-color: #283645;
+  opacity: 1;
+  margin: 0;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.logo__inner-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 .nav__item a {
   font-size: 18px;
@@ -36,46 +105,120 @@
   border-top: 2px solid #485461;
   border-bottom: 2px solid #000000;
 }
+.nav__item a:hover,
+.nav__item a:focus {
+  color: #d22856;
+  outline: none;
+}
+.nav__item a:active {
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .main-header {
     width: 100%;
     background: url(../img/bg-back-tablet@2x.jpg) top center;
-    background-size: 1200px auto;
     background-repeat: no-repeat;
   }
   .header__nav {
     margin-bottom: 50px;
   }
+  .header__logo {
+    width: 146px;
+    height: 40px;
+    display: block;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    background-repeat: no-repeat;
+  }
+  .header__logo:active {
+    opacity: 0.3;
+  }
+  .header__logo:hover,
+  .header__logo:focus {
+    width: 146px;
+    height: 40px;
+    display: block;
+    background-image: url("../img/logo-pink-tablet.svg");
+    background-repeat: no-repeat;
+    outline: none;
+  }
+  .nav__button {
+    margin-top: 25px;
+  }
   .nav__wrapper {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  .logo__inner-wrapper {
     width: 660px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
+    align-items: flex-end;
+  }
+  .logo__wrapper--open-menu  {
+    padding: 20px 0;
   }
 }
 @media (min-width: 1200px) {
   .main-header {
     width: 100%;
   }
-  .nav__wrapper {
+  .header__nav {
+    display: none;
+  }
+  .header__nav-desktop {
+    background-color: rgba(25, 34, 43, 0.3);
+    display: block;
+  }
+  .nav__wrapper-desktop {
     display: flex;
     width: 960px;
     padding: 0 10px;
     box-sizing: border-box;
     margin: 0 auto;
+    align-items: center;
   }
-  .nav__list {
+  .header__logo {
+    width: 146px;
+    height: 40px;
+    display: block;
+    background-image: url("../img/logo-pink-white-desktop.svg");
+    background-repeat: no-repeat;
+  }
+  .header__logo:active {
+    opacity: 0.3;
+  }
+  .header__logo:hover,
+  .header__logo:focus {
+    width: 146px;
+    height: 40px;
+    display: block;
+    background-image: url("../img/logo-pink-desktop.svg");
+    background-repeat: no-repeat;
+    outline: none;
+  }
+  .nav__list-desktop {
+    list-style: none;
     background-color: rgba(25, 34, 43, 0.3);
     display: flex;
     flex-wrap: wrap;
     width: 790px;
     justify-content: flex-end;
+    align-items: center;
   }
   .nav__item a {
     font-weight: 400;
     margin-left: 75px;
     padding: 20px 0;
     border: none;
+    padding-bottom: 5px;
+  }
+  .nav__item-active a {
+    border-bottom: 2px solid #ffffff;
+  }
+  .nav__item a:focus,
+  .nav__item a:hover {
+    border-color: #d22856;
   }
   .main-header {
     width: 100%;

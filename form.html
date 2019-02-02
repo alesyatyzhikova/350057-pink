@@ -1,137 +1,153 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="source/css/style.css">
-    <title>Формы</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="header__nav">
-        <div class="nav__wrapper">
-        <div class="logo__wrapper">
-        <a class="header__logo" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="source/img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 768px)" srcset="source/img/logo-pink-white-tablet.svg">
-          <img src="source/img/logo-pink-white-mobile.svg" alt=" Логотип">
-        </picture>
-        </a>
-      </div>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="index.html">Главная</a></li>
-          <li class="nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="nav__item"><a>Конкурс</a></li>
-          <li class="nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
-        </ul>
-      </div>
-      </nav>
-      <div class="promo-form">
-        <h3 class="promo-form__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
-      </div>
-    </header>
-    <main>
-      <section class="form">
-        <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
-        <form action="index.html" method="post">
-          <div class="form__wrapper">
-          <div class="form__name-wrapper">
-            <div class="surname__block form__name">
-            <label for="surname">Фамилия:</label><input class="input-name" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-          </div>
-          <div class="name__block form__name">
-            <label for="name">Имя:</label><input type="text" name="name" id="name" placeholder="Введите ваше имя *">
-          </div>
-          <div class="middle-name__block form__name">
-            <label for="middle-name">Отчество:</label><input type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
-          </div>
-          </div>
-          <div class="form__checkbox">
-          <fieldset>
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <div class="checkbox__wrapper">
-              <div class="checkbox__block">
-              <input type="checkbox" name="checkbox-1" id="checkbox-1" checked><label class="checkbox__label" for="checkbox-1">Сделал селфи с акулой</label>
+   <head>
+      <meta charset="utf-8" name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="source/css/style.css">
+      <title>Формы</title>
+   </head>
+   <body>
+      <header class="main-header">
+         <nav class="header__nav">
+            <div class="nav__wrapper">
+               <div class="logo__wrapper">
+                  <div class="logo__inner-wrapper">
+                     <a class="header__logo" href="index.html">
+                     </a>
+                     <button class="nav__button" type="button" name="button">Открыть</button>
+                  </div>
+               </div>
+               <ul class="nav__list nav--closed">
+                  <li class="nav__item"><a href="index.html">Главная</a></li>
+                  <li class="nav__item"><a href="photo.html">Фотографии</a></li>
+                  <li class="nav__item nav__item-active"><a>Конкурс</a></li>
+                  <li class="nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+               </ul>
             </div>
-            <div class="checkbox__block">
-              <input type="checkbox" name="checkbox-2" id="checkbox-2" checked><label class="checkbox__label" for="checkbox-2">Обгорел на пляже</label>
+         </nav>
+         <nav class="header__nav-desktop">
+            <div class="nav__wrapper-desktop">
+               <div class="logo__wrapper-desktop">
+                  <a class="header__logo" href="index.html">
+                  </a>
+               </div>
+               <ul class="nav__list-desktop">
+                  <li class="nav__item"><a href="index.html">Главная</a></li>
+                  <li class="nav__item"><a href="photo.html">Фотографии</a></li>
+                  <li class="nav__item nav__item-active"><a>Конкурс</a></li>
+                  <li class="nav__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+               </ul>
             </div>
-            <div class="checkbox__block">
-              <input type="checkbox" name="checkbox-3" id="checkbox-3"><label class="checkbox__label" for="checkbox-3">Видел Чака Норриса</label>
-            </div>
-            <div class="checkbox__block">
-              <input type="checkbox" name="checkbox-4" id="checkbox-4"><label class="checkbox__label" for="checkbox-4">Накупил сувениров</label>
-            </div>
-            <div class="checkbox__block">
-              <input type="checkbox" name="checkbox-5" id="checkbox-5" checked><label class="checkbox__label" for="checkbox-5">Удержал башню</label>
-            </div>
-            <div class="checkbox__block">
-              <input type="checkbox" name="checkbox-6" id="checkbox-6"><label class="checkbox__label" for="checkbox-6">Разгромил отель</label>
-            </div>
-          </div>
-          </fieldset>
-        </div>
-        <div class="form__contacts">
-          <fieldset>
-            <legend class="mobile-hidden">Контактная информация</legend>
-            <div class="form-contacts__block-wrapper">
-            <div class="form__contacts-block">
-            <label for="phone">Номер телефона</label><input type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="form__contacts-block">
-            <label for="phone">Адрес почты</label><input type="text" name="phone" id="phone" placeholder="Введите почту *">
-          </div>
-        </div>
-        </fieldset>
-      </div>
-      <div class="form__radio">
-          <fieldset>
-            <legend>С каким приложением путешествовали?</legend>
-            <div class="form__radio-block">
-              <input type="radio" name="radio" id="radio-1" checked><label class="radio__label" for="radio-1">Pink для iOS</label>
-            </div>
-            <div class="form__radio-block">
-              <input type="radio" name="radio" id="radio-2"><label class="radio__label" for="radio-2">Pink на Android</label>
-            </div>
-            <div class="form__radio-block">
-              <input type="radio" name="radio" id="radio-3"><label class="radio__label" for="radio-3">Windows Phone</label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="form__textarea">
-          <fieldset>
-            <legend>Опишите свои эмоции</legend>
-            <label class="mobile-hidden" for="textarea">Опишите свои эмоции</label>
-            <textarea name="description" rows="4" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </div>
-        </fieldset>
-      </div>
-      <div class="form__bottom-block">
-          <button class="form__button" type="submit" name="button">Отправить форму</button>
-          <p class="form__bottom"><span>*</span>- Обязательные поля</p>
-        </div>
-      </div>
-        </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__logo footer__block">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="source/img/logo-pink-blue-desktop.svg">
-        <source media="(min-width: 768px)" srcset="source/img/logo-pink-blue-mobile.svg">
-        <img src="source/img/logo-pink-blue-mobile.svg" alt="Логотип">
-      </picture>
-      </div>
-      <div class="footer__social social footer__block">
-        <ul class="social__list">
-          <a class="social__link twitter" href= "#"><li class="social__item">Twitter</li></a>
-          <a class="social__link facebook" href= "#"><li class="social__item">Facebook</li></a>
-          <a class="social__link youtube" href= "#"><li class="social__item">Youtube</li></a>
-        </ul>
-      </div>
-      <div class="footer__develop footer__block">
-        <p class="footer__develop-text">Разработано</p>
-      </div>
-    </footer>
-  </body>
+         </nav>
+         <div class="promo-form">
+            <h3 class="promo-form__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
+         </div>
+      </header>
+      <main>
+         <section class="form">
+            <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
+            <form action="index.html" method="post">
+               <div class="form__wrapper">
+                  <div class="form__name-wrapper">
+                     <div class="surname__block form__name">
+                        <label for="surname">Фамилия:</label><input class="input-name" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+                     </div>
+                     <div class="name__block form__name">
+                        <label for="name">Имя:</label><input type="text" name="name" id="name" placeholder="Введите ваше имя *">
+                     </div>
+                     <div class="middle-name__block form__name">
+                        <label for="middle-name">Отчество:</label><input type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+                     </div>
+                  </div>
+                  <div class="form__checkbox">
+                     <fieldset>
+                        <legend>Ваши безбашенные достижения в путешествии</legend>
+                        <div class="checkbox__wrapper">
+                           <div class="checkbox__block">
+                              <input type="checkbox" name="checkbox-1" id="checkbox-1" checked><label class="checkbox__label" for="checkbox-1">Сделал селфи с акулой</label>
+                           </div>
+                           <div class="checkbox__block">
+                              <input type="checkbox" name="checkbox-2" id="checkbox-2" checked><label class="checkbox__label" for="checkbox-2">Обгорел на пляже</label>
+                           </div>
+                           <div class="checkbox__block">
+                              <input type="checkbox" name="checkbox-3" id="checkbox-3"><label class="checkbox__label" for="checkbox-3">Видел Чака Норриса</label>
+                           </div>
+                           <div class="checkbox__block">
+                              <input type="checkbox" name="checkbox-4" id="checkbox-4"><label class="checkbox__label" for="checkbox-4">Накупил сувениров</label>
+                           </div>
+                           <div class="checkbox__block">
+                              <input type="checkbox" name="checkbox-5" id="checkbox-5" checked><label class="checkbox__label" for="checkbox-5">Удержал башню</label>
+                           </div>
+                           <div class="checkbox__block">
+                              <input type="checkbox" name="checkbox-6" id="checkbox-6"><label class="checkbox__label" for="checkbox-6">Разгромил отель</label>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="form__contacts">
+                     <fieldset>
+                        <legend class="mobile-hidden">Контактная информация</legend>
+                        <div class="form-contacts__block-wrapper">
+                           <div class="form__contacts-block">
+                              <label for="phone">Номер телефона</label><input type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                           </div>
+                           <div class="form__contacts-block">
+                              <label for="phone">Адрес почты</label><input type="text" name="phone" id="phone" placeholder="Введите почту *">
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="form__radio">
+                     <fieldset>
+                        <legend>С каким приложением путешествовали?</legend>
+                        <div class="form__radio-block">
+                           <input type="radio" name="radio" id="radio-1" checked><label class="radio__label" for="radio-1">Pink для iOS</label>
+                        </div>
+                        <div class="form__radio-block">
+                           <input type="radio" name="radio" id="radio-2"><label class="radio__label" for="radio-2">Pink на Android</label>
+                        </div>
+                        <div class="form__radio-block">
+                           <input type="radio" name="radio" id="radio-3"><label class="radio__label" for="radio-3">Windows Phone</label>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="form__textarea">
+                     <fieldset>
+                        <legend>Опишите свои эмоции</legend>
+                        <label class="mobile-hidden" for="textarea">Опишите свои эмоции</label>
+                        <textarea class="textarea" name="description" rows="4" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
+                  </div>
+                  </fieldset>
+               </div>
+               <div class="form__bottom-block">
+                  <button class="form__button" type="submit" name="button">Отправить форму</button>
+                  <p class="form__bottom"><span>*</span>- Обязательные поля</p>
+               </div>
+               </div>
+            </form>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__logo footer__block">
+            <a class="footer__logo" href="#">
+            </a>
+         </div>
+         <div class="footer__social social footer__block">
+            <ul class="social__list">
+               <a class="social__link twitter" href= "#">
+                  <li class="social__item">Twitter</li>
+               </a>
+               <a class="social__link facebook" href= "#">
+                  <li class="social__item">Facebook</li>
+               </a>
+               <a class="social__link youtube" href= "#">
+                  <li class="social__item">Youtube</li>
+               </a>
+            </ul>
+         </div>
+         <div class="footer__develop footer__block">
+            <p class="footer__develop-text">Разработано</p>
+         </div>
+      </footer>
+      <script src="source/js/main.js"></script>
+   </body>
 </html>
